@@ -13,146 +13,211 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.7;
-            color: #2a2a2a;
-            background: #fafafa;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.8;
+            color: #1a1a1a;
+            background: #ffffff;
             -webkit-font-smoothing: antialiased;
         }
 
         .container {
-            max-width: 720px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 80px 32px 120px;
+            padding: 100px 40px 140px;
+        }
+
+        header {
+            border-bottom: 2px solid #1a1a1a;
+            padding-bottom: 40px;
+            margin-bottom: 60px;
         }
 
         h1 {
-            font-size: 32px;
+            font-size: 36px;
             font-weight: 400;
-            letter-spacing: -0.02em;
-            margin-bottom: 32px;
+            letter-spacing: -0.01em;
+            margin-bottom: 16px;
             color: #1a1a1a;
+            line-height: 1.2;
+        }
+
+        .tagline {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 15px;
+            color: #666;
+            font-weight: 400;
+            letter-spacing: 0.02em;
         }
 
         h2 {
-            font-size: 16px;
-            font-weight: 500;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.08em;
-            margin-top: 64px;
-            margin-bottom: 24px;
-            color: #4a4a4a;
+            letter-spacing: 0.1em;
+            margin-top: 72px;
+            margin-bottom: 28px;
+            color: #1a1a1a;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #e0e0e0;
         }
 
         p {
             font-size: 17px;
-            color: #3a3a3a;
+            color: #2a2a2a;
             margin-bottom: 24px;
         }
 
         .intro {
-            font-size: 18px;
-            line-height: 1.65;
-            color: #2a2a2a;
+            font-size: 19px;
+            line-height: 1.7;
+            color: #1a1a1a;
+            margin-bottom: 56px;
+            font-style: italic;
+        }
+
+        section {
             margin-bottom: 48px;
-            max-width: 680px;
         }
 
         ul {
             list-style: none;
-            margin-bottom: 24px;
+            margin-bottom: 28px;
         }
 
         li {
             font-size: 17px;
-            color: #3a3a3a;
-            margin-bottom: 14px;
-            padding-left: 24px;
+            color: #2a2a2a;
+            margin-bottom: 16px;
+            padding-left: 28px;
             position: relative;
+            line-height: 1.7;
         }
 
         li:before {
-            content: "—";
+            content: "•";
             position: absolute;
-            left: 0;
-            color: #999;
+            left: 8px;
+            color: #666;
+            font-weight: 600;
+        }
+
+        .contact-section {
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 2px solid #1a1a1a;
         }
 
         .contact-email {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             font-size: 17px;
-            color: #2a2a2a;
+            color: #1a1a1a;
             text-decoration: none;
-            border-bottom: 1px solid #d0d0d0;
-            padding-bottom: 2px;
-            transition: border-color 0.2s ease;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+            border-bottom: 2px solid #1a1a1a;
+            padding-bottom: 3px;
+            transition: opacity 0.2s ease;
+            display: inline-block;
         }
 
         .contact-email:hover {
-            border-bottom-color: #2a2a2a;
+            opacity: 0.6;
         }
 
         @media (max-width: 768px) {
             .container {
-                padding: 60px 24px 100px;
+                padding: 60px 28px 100px;
+            }
+
+            header {
+                padding-bottom: 32px;
+                margin-bottom: 48px;
             }
 
             h1 {
-                font-size: 28px;
-                margin-bottom: 28px;
+                font-size: 30px;
+                margin-bottom: 14px;
+            }
+
+            .tagline {
+                font-size: 14px;
             }
 
             h2 {
-                font-size: 14px;
-                margin-top: 52px;
-                margin-bottom: 20px;
+                font-size: 13px;
+                margin-top: 56px;
+                margin-bottom: 24px;
             }
 
-            .intro,
+            .intro {
+                font-size: 18px;
+                margin-bottom: 48px;
+            }
+
             p,
             li {
                 font-size: 16px;
+            }
+
+            .contact-section {
+                margin-top: 64px;
+                padding-top: 32px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Independent Couple Experience Audit</h1>
+        <header>
+            <h1>Independent Couple Experience Audit</h1>
+            <p class="tagline">Confidential hotel assessment services</p>
+        </header>
         
         <p class="intro">A confidential service for hotel operators seeking an unbiased evaluation of the couple guest experience. Desk-based and on-site audits are conducted from the perspective of traveling couples, delivering operational insights without public exposure or promotional activity.</p>
 
-        <h2>What we do</h2>
-        <ul>
-            <li>Desk-based couple experience audits using publicly available data and guest-facing touchpoints</li>
-            <li>On-site couple experience audits conducted as regular guests</li>
-            <li>Confidential written reports delivered directly to hotel leadership</li>
-            <li>Analysis of emotional consistency across reservation, arrival, stay, and departure</li>
-            <li>Assessment of how operational design supports or undermines couple journeys</li>
-        </ul>
+        <section>
+            <h2>What we do</h2>
+            <ul>
+                <li>Desk-based couple experience audits using publicly available data and guest-facing touchpoints</li>
+                <li>On-site couple experience audits conducted as regular guests</li>
+                <li>Confidential written reports delivered directly to hotel leadership</li>
+                <li>Analysis of emotional consistency across reservation, arrival, stay, and departure</li>
+                <li>Assessment of how operational design supports or undermines couple journeys</li>
+            </ul>
+        </section>
 
-        <h2>What we don't do</h2>
-        <ul>
-            <li>No public reviews, ratings, or social media posts</li>
-            <li>No influencer marketing or brand partnerships</li>
-            <li>No promotional content or hotel features</li>
-            <li>No content creation for external audiences</li>
-            <li>No sharing of audit findings beyond the commissioning party</li>
-        </ul>
+        <section>
+            <h2>What we don't do</h2>
+            <ul>
+                <li>No public reviews, ratings, or social media posts</li>
+                <li>No influencer marketing or brand partnerships</li>
+                <li>No promotional content or hotel features</li>
+                <li>No content creation for external audiences</li>
+                <li>No sharing of audit findings beyond the commissioning party</li>
+            </ul>
+        </section>
 
-        <h2>How hotels use our audits</h2>
-        <ul>
-            <li>Experience refinement prior to seasonal repositioning or rate adjustments</li>
-            <li>Pre-opening calibration of service standards and guest journey design</li>
-            <li>Validation of couple segment readiness during brand repositioning</li>
-            <li>Quality consistency reviews across properties or following leadership transitions</li>
-            <li>Identification of friction points across the reservation-to-checkout journey</li>
-        </ul>
+        <section>
+            <h2>How hotels use our audits</h2>
+            <ul>
+                <li>Experience refinement prior to seasonal repositioning or rate adjustments</li>
+                <li>Pre-opening calibration of service standards and guest journey design</li>
+                <li>Validation of couple segment readiness during brand repositioning</li>
+                <li>Quality consistency reviews across properties or following leadership transitions</li>
+                <li>Identification of friction points across the reservation-to-checkout journey</li>
+            </ul>
+        </section>
 
-        <h2>Engagement model</h2>
-        <p>Audits are conducted on a case-by-case basis under confidentiality terms defined by the hotel. Each engagement is independent, with no ongoing obligations or public disclosure. We operate under NDA when required and deliver findings solely to designated internal stakeholders.</p>
+        <section>
+            <h2>Engagement model</h2>
+            <p>Audits are conducted on a case-by-case basis under confidentiality terms defined by the hotel. Each engagement is independent, with no ongoing obligations or public disclosure. We operate under NDA when required and deliver findings solely to designated internal stakeholders.</p>
+        </section>
 
-        <h2>Contact</h2>
-        <p><a href="mailto:audit@coupleaudit.com" class="contact-email">audit@coupleaudit.com</a></p>
+        <section class="contact-section">
+            <h2>Contact</h2>
+            <p><a href="mailto:audit@coupleaudit.com" class="contact-email">audit@coupleaudit.com</a></p>
+        </section>
     </div>
 </body>
 </html>
